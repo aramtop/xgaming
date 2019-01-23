@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>XGaming</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+<h2>Извините, Вы просматриваете вебверсию нашего приложения. Качество и скорость скорее всего будут выше, если Вы решите смотреть через наше приложение. <a href='https://play.google.com/store/apps/details?id=com.XGamingAramVirabyan&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></h2>
+
+<div style='position: relative; padding-bottom: 56%; height: 0;'><iframe src='https://app.viloud.tv/player/embed/channel/4a1cecaadf13f5e28ef677ec82955c8b?autoplay=1&volume=0&controls=0&title=0&share=0&random=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' frameborder='0' allow='autoplay' allowfullscreen></iframe></div><p>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+
+  <!-- The Band Section -->
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">XGaming</h2>
+    <p class="w3-opacity"><i>Мы любим играть!</i></p>
+    <p class="w3-justify">Рады видеть Вас на канале XGaming, который вещает прямо сейчас в прямом эфире! Мы любим игры, а сам канал - игровой. Мы не зацикливаемся на одной игре, поэтому мы транслируем самые разные ИНТЕРЕСНЫЕ игры, которые точно понравятся Вам! Новости, летсплеи, фильмы и многое другое уже сейчас на XGaming!</p>
+   
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Статус</h2>
+      <p class="w3-opacity w3-center"><i>Все в норме. Проблемы с просмотром ? Проверьте свое подключение к сети.</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Сервер вещания (Германия, Франкфурт)<span class="w3-tag w3-red w3-margin-left">Онлайн</span></li>
+      </ul>
+
+    
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
